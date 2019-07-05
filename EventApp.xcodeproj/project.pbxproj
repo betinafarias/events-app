@@ -14,6 +14,22 @@
 		4124870A22CEB8A9009426F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4124870822CEB8A9009426F4 /* LaunchScreen.storyboard */; };
 		4124871522CEB8A9009426F4 /* EventAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4124871422CEB8A9009426F4 /* EventAppTests.swift */; };
 		4124872022CEB8AA009426F4 /* EventAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4124871F22CEB8AA009426F4 /* EventAppUITests.swift */; };
+		4128A91E22CEBE3600EA82DC /* Raleway 600.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4128A90C22CEBE3500EA82DC /* Raleway 600.ttf */; };
+		4128A92322CEBE3600EA82DC /* Raleway 500.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4128A91122CEBE3500EA82DC /* Raleway 500.ttf */; };
+		4128A92422CEBE3600EA82DC /* Raleway regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4128A91222CEBE3500EA82DC /* Raleway regular.ttf */; };
+		4128A92522CEBE3600EA82DC /* Raleway 300.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4128A91322CEBE3500EA82DC /* Raleway 300.ttf */; };
+		4128A92622CEBE3600EA82DC /* RalewayBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4128A91422CEBE3500EA82DC /* RalewayBold.ttf */; };
+		4128A92F22CEBFE300EA82DC /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4128A92E22CEBFE300EA82DC /* UIFontExtension.swift */; };
+		41EC3B2D22CEC4C3007E2886 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC3B2B22CEC4C3007E2886 /* HomeViewController.swift */; };
+		41EC3B2E22CEC4C3007E2886 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41EC3B2C22CEC4C3007E2886 /* HomeViewController.xib */; };
+		41EC3B3022CECEB2007E2886 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC3B2F22CECEB2007E2886 /* AppCoordinator.swift */; };
+		41EC3B3322CECF07007E2886 /* RootViewControllerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC3B3222CECF07007E2886 /* RootViewControllerProvider.swift */; };
+		41EC3B3722CED074007E2886 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC3B3522CED074007E2886 /* SplashViewController.swift */; };
+		41EC3B3822CED074007E2886 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41EC3B3622CED074007E2886 /* SplashViewController.xib */; };
+		41EC3B3A22CED206007E2886 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC3B3922CED206007E2886 /* SplashViewModel.swift */; };
+		41EC3B3C22CED4F9007E2886 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC3B3B22CED4F9007E2886 /* Constants.swift */; };
+		41EC3B3E22CED7EC007E2886 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC3B3D22CED7EC007E2886 /* HomeViewModel.swift */; };
+		41EC3B4022CED802007E2886 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC3B3F22CED802007E2886 /* HomeCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +63,22 @@
 		4124871B22CEB8AA009426F4 /* EventAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4124871F22CEB8AA009426F4 /* EventAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAppUITests.swift; sourceTree = "<group>"; };
 		4124872122CEB8AA009426F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4128A90C22CEBE3500EA82DC /* Raleway 600.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway 600.ttf"; sourceTree = "<group>"; };
+		4128A91122CEBE3500EA82DC /* Raleway 500.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway 500.ttf"; sourceTree = "<group>"; };
+		4128A91222CEBE3500EA82DC /* Raleway regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway regular.ttf"; sourceTree = "<group>"; };
+		4128A91322CEBE3500EA82DC /* Raleway 300.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway 300.ttf"; sourceTree = "<group>"; };
+		4128A91422CEBE3500EA82DC /* RalewayBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RalewayBold.ttf; sourceTree = "<group>"; };
+		4128A92E22CEBFE300EA82DC /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		41EC3B2B22CEC4C3007E2886 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		41EC3B2C22CEC4C3007E2886 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		41EC3B2F22CECEB2007E2886 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		41EC3B3222CECF07007E2886 /* RootViewControllerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerProvider.swift; sourceTree = "<group>"; };
+		41EC3B3522CED074007E2886 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		41EC3B3622CED074007E2886 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		41EC3B3922CED206007E2886 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		41EC3B3B22CED4F9007E2886 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		41EC3B3D22CED7EC007E2886 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		41EC3B3F22CED802007E2886 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +129,11 @@
 		412486FE22CEB8A6009426F4 /* EventApp */ = {
 			isa = PBXGroup;
 			children = (
+				41EC3B3422CED05E007E2886 /* Splash */,
+				41EC3B2522CEC47B007E2886 /* Home */,
+				4128A92D22CEBFD100EA82DC /* General */,
+				4128A90722CEBE0400EA82DC /* Resources */,
+				41EC3B2F22CECEB2007E2886 /* AppCoordinator.swift */,
 				412486FF22CEB8A6009426F4 /* AppDelegate.swift */,
 				4124870122CEB8A6009426F4 /* ViewController.swift */,
 				4124870322CEB8A6009426F4 /* Main.storyboard */,
@@ -123,6 +160,97 @@
 				4124872122CEB8AA009426F4 /* Info.plist */,
 			);
 			path = EventAppUITests;
+			sourceTree = "<group>";
+		};
+		4128A90722CEBE0400EA82DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4128A90822CEBE0900EA82DC /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4128A90822CEBE0900EA82DC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4128A91322CEBE3500EA82DC /* Raleway 300.ttf */,
+				4128A91122CEBE3500EA82DC /* Raleway 500.ttf */,
+				4128A90C22CEBE3500EA82DC /* Raleway 600.ttf */,
+				4128A91422CEBE3500EA82DC /* RalewayBold.ttf */,
+				4128A91222CEBE3500EA82DC /* Raleway regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4128A92D22CEBFD100EA82DC /* General */ = {
+			isa = PBXGroup;
+			children = (
+				41EC3B3122CECED2007E2886 /* Protocols */,
+				4128A93022CEBFE600EA82DC /* Extensions */,
+				41EC3B3B22CED4F9007E2886 /* Constants.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		4128A93022CEBFE600EA82DC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4128A92E22CEBFE300EA82DC /* UIFontExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		41EC3B2522CEC47B007E2886 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				41EC3B2822CEC486007E2886 /* ViewModel */,
+				41EC3B2722CEC482007E2886 /* Model */,
+				41EC3B2622CEC47F007E2886 /* View */,
+				41EC3B3F22CED802007E2886 /* HomeCoordinator.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		41EC3B2622CEC47F007E2886 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41EC3B2B22CEC4C3007E2886 /* HomeViewController.swift */,
+				41EC3B2C22CEC4C3007E2886 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41EC3B2722CEC482007E2886 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41EC3B2822CEC486007E2886 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				41EC3B3D22CED7EC007E2886 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		41EC3B3122CECED2007E2886 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				41EC3B3222CECF07007E2886 /* RootViewControllerProvider.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		41EC3B3422CED05E007E2886 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				41EC3B3522CED074007E2886 /* SplashViewController.swift */,
+				41EC3B3622CED074007E2886 /* SplashViewController.xib */,
+				41EC3B3922CED206007E2886 /* SplashViewModel.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +357,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4128A92522CEBE3600EA82DC /* Raleway 300.ttf in Resources */,
+				4128A92622CEBE3600EA82DC /* RalewayBold.ttf in Resources */,
 				4124870A22CEB8A9009426F4 /* LaunchScreen.storyboard in Resources */,
+				41EC3B3822CED074007E2886 /* SplashViewController.xib in Resources */,
 				4124870722CEB8A9009426F4 /* Assets.xcassets in Resources */,
+				4128A92322CEBE3600EA82DC /* Raleway 500.ttf in Resources */,
+				4128A91E22CEBE3600EA82DC /* Raleway 600.ttf in Resources */,
 				4124870522CEB8A6009426F4 /* Main.storyboard in Resources */,
+				4128A92422CEBE3600EA82DC /* Raleway regular.ttf in Resources */,
+				41EC3B2E22CEC4C3007E2886 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +391,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41EC3B3322CECF07007E2886 /* RootViewControllerProvider.swift in Sources */,
 				4124870222CEB8A6009426F4 /* ViewController.swift in Sources */,
+				4128A92F22CEBFE300EA82DC /* UIFontExtension.swift in Sources */,
+				41EC3B3E22CED7EC007E2886 /* HomeViewModel.swift in Sources */,
+				41EC3B3022CECEB2007E2886 /* AppCoordinator.swift in Sources */,
 				4124870022CEB8A6009426F4 /* AppDelegate.swift in Sources */,
+				41EC3B3722CED074007E2886 /* SplashViewController.swift in Sources */,
+				41EC3B2D22CEC4C3007E2886 /* HomeViewController.swift in Sources */,
+				41EC3B3A22CED206007E2886 /* SplashViewModel.swift in Sources */,
+				41EC3B3C22CED4F9007E2886 /* Constants.swift in Sources */,
+				41EC3B4022CED802007E2886 /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,14 +576,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EventApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.betina.farias.EventApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,14 +596,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EventApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.betina.farias.EventApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

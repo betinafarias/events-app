@@ -20,14 +20,22 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Raleway 300.ttf</string>
+		<string>Raleway 500.ttf</string>
+		<string>Raleway 600.ttf</string>
+		<string>RalewayBold.ttf</string>
+		<string>Raleway regular.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<string>SplashViewController</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
