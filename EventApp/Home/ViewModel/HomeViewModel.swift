@@ -14,7 +14,7 @@ protocol HomeNavigationDelegate: AnyObject {
 
 protocol HomeViewModelProtocol: AnyObject {
     var events: Dynamic<[Event]> { get }
-    
+    var tableCellHeight: Int { get }
     func showDetail()
     func loadData()
 }
@@ -22,6 +22,7 @@ protocol HomeViewModelProtocol: AnyObject {
 final class HomeViewModel {
     private weak var navigationDelegate: HomeNavigationDelegate?
     var events: Dynamic<[Event]> = Dynamic([])
+    var tableCellHeight: Int = 164
     
     init(navigationDelegate: HomeNavigationDelegate? = nil) {
         self.navigationDelegate = navigationDelegate
