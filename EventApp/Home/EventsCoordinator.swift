@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeCoordinator {
+class EventsCoordinator {
     private let presenter: UINavigationController
 
     init(presenter: UINavigationController) {
@@ -24,7 +24,7 @@ class HomeCoordinator {
     }
 }
 
-extension HomeCoordinator: HomeNavigationDelegate {
+extension EventsCoordinator: HomeNavigationDelegate {
     func showDetail() {
         
     }

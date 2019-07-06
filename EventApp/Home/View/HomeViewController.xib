@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="EventApp" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="MXl-rB-DDI" id="ejK-GN-6UF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,11 +23,19 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundHome" translatesAutoresizingMaskIntoConstraints="NO" id="W9P-KG-ABv">
                     <rect key="frame" x="0.0" y="358.5" width="414" height="537.5"/>
                 </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MXl-rB-DDI">
+                    <rect key="frame" x="20" y="69" width="374" height="827"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="W9P-KG-ABv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Eqo-Az-Tdm"/>
+                <constraint firstItem="MXl-rB-DDI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="GWl-Zg-0Xa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MXl-rB-DDI" secondAttribute="trailing" constant="20" id="HlW-oP-gOk"/>
+                <constraint firstItem="MXl-rB-DDI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="Wdx-Hz-oux"/>
                 <constraint firstAttribute="bottom" secondItem="W9P-KG-ABv" secondAttribute="bottom" id="cjn-RL-Qvq"/>
+                <constraint firstAttribute="bottom" secondItem="MXl-rB-DDI" secondAttribute="bottom" id="cm8-gY-Kkc"/>
                 <constraint firstItem="W9P-KG-ABv" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.6" id="mrE-88-zAF"/>
                 <constraint firstItem="W9P-KG-ABv" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="v3I-f2-ahs"/>
             </constraints>

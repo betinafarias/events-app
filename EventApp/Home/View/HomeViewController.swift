@@ -10,6 +10,13 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.delegate = self
+            tableView.backgroundColor = .clear
+            tableView.tableFooterView = UIView()
+        }
+    }
     private let viewModel: HomeViewModelProtocol
     
     init(viewModel: HomeViewModelProtocol = HomeViewModel()) {
@@ -24,6 +31,25 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        viewModel.loadData()
     }
+    
+    private func configBind() {
+//        viewModel.events.bind { [weak self] events in
+//            let dataSource = TableViewDataSource(
+//                models: events,
+//                reuseIdentifier: "message"
+//            ) { message, cell in
+//                cell.textLabel?.text = message.title
+//                cell.detailTextLabel?.text = message.preview
+//            }
+//            self?.tableView.dataSource =
+//        }
+    }
+    
+    
+}
+
+extension HomeViewController: UITableViewDelegate {
+    
 }

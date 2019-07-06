@@ -13,11 +13,15 @@ protocol HomeNavigationDelegate: AnyObject {
 }
 
 protocol HomeViewModelProtocol: AnyObject {
+    var events: Dynamic<[Event]> { get }
+    
     func showDetail()
+    func loadData()
 }
 
 final class HomeViewModel {
     private weak var navigationDelegate: HomeNavigationDelegate?
+    var events: Dynamic<[Event]> = Dynamic([])
     
     init(navigationDelegate: HomeNavigationDelegate? = nil) {
         self.navigationDelegate = navigationDelegate
@@ -25,6 +29,19 @@ final class HomeViewModel {
 }
 
 extension HomeViewModel: HomeViewModelProtocol {
+    func loadData() {
+        APIManager.request(with: EventsEndpoint.getEvents) { [weak self] (result: Result<[Event], APIError>) in
+            switch result {
+            case .success(let events):
+                DispatchQueue.main.async {
+                    self?.events.value = events
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
     func showDetail() {
         self.navigationDelegate?.showDetail()
     }

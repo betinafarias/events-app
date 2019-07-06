@@ -9,7 +9,6 @@
 import Foundation
 
 struct Constants {
-    
     struct Xibs {
         struct SplashViewController {
             static let xib = "SplashViewController"
@@ -19,5 +18,26 @@ struct Constants {
             static let xib = "HomeViewController"
             static let title = "Eventos"
         }
+    }
+}
+
+struct APIConstants {
+    static private let dictionaryInfo = NSDictionary(contentsOfFile: Bundle.main.path(forResource: "Info", ofType: "plist") ?? "")
+    
+    static private var dictionaryConfig: [String: Any]? {
+        return dictionaryInfo?["Config"] as? [String: Any]
+    }
+    
+    static var BaseURL: String {
+        return dictionaryConfig?["urlBase"] as? String ?? ""
+    }
+    
+    enum HTTPHeaderField: String {
+        case contentType = "Content-Type"
+        case acceptType = "Accept"
+    }
+    
+    enum ContentType: String {
+        case json = "application/json"
     }
 }
