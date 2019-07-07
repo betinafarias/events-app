@@ -16,4 +16,13 @@ struct Util {
         }
         return String(str[..<str.index(str.endIndex, offsetBy: -5)])
     }
+
+    static func converTimeIntervalSince1970ToString(_ time: Int) -> String {
+        let timeInterval = Double(time)
+        let date = Date(timeIntervalSince1970: timeInterval)
+        let dateString = DateFormatter.brazillian2Digits.string(from: date)
+        return dateString
+    }
 }
+
+

@@ -29,6 +29,9 @@
 		413831C722D0534A00DE4A6F /* NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413831C622D0534A00DE4A6F /* NibInstantiatable.swift */; };
 		413831CA22D053A800DE4A6F /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413831C922D053A800DE4A6F /* Util.swift */; };
 		413831CD22D05DD300DE4A6F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413831CC22D05DD300DE4A6F /* UIColorExtension.swift */; };
+		413831CF22D0E61B00DE4A6F /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413831CE22D0E61B00DE4A6F /* DateFormatter.swift */; };
+		413831D422D0ED3E00DE4A6F /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413831D322D0ED3E00DE4A6F /* IntExtension.swift */; };
+		413831D622D0EFF400DE4A6F /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413831D522D0EFF400DE4A6F /* Kingfisher.framework */; };
 		41EC3B2D22CEC4C3007E2886 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC3B2B22CEC4C3007E2886 /* HomeViewController.swift */; };
 		41EC3B2E22CEC4C3007E2886 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41EC3B2C22CEC4C3007E2886 /* HomeViewController.xib */; };
 		41EC3B3022CECEB2007E2886 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC3B2F22CECEB2007E2886 /* AppCoordinator.swift */; };
@@ -89,6 +92,9 @@
 		413831C622D0534A00DE4A6F /* NibInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibInstantiatable.swift; sourceTree = "<group>"; };
 		413831C922D053A800DE4A6F /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		413831CC22D05DD300DE4A6F /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		413831CE22D0E61B00DE4A6F /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		413831D322D0ED3E00DE4A6F /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		413831D522D0EFF400DE4A6F /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		41EC3B2B22CEC4C3007E2886 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		41EC3B2C22CEC4C3007E2886 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		41EC3B2F22CECEB2007E2886 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -109,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				413831D622D0EFF400DE4A6F /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,8 +234,19 @@
 				413831C422D052B300DE4A6F /* NibRegistrableView.swift */,
 				413831C622D0534A00DE4A6F /* NibInstantiatable.swift */,
 				413831CC22D05DD300DE4A6F /* UIColorExtension.swift */,
+				413831CE22D0E61B00DE4A6F /* DateFormatter.swift */,
+				413831D322D0ED3E00DE4A6F /* IntExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		413831D022D0E93400DE4A6F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				41EC3B4122CEE81E007E2886 /* EventListTableViewCell.swift */,
+				41EC3B4222CEE81E007E2886 /* EventListTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		41EC3B2522CEC47B007E2886 /* Home */ = {
@@ -246,10 +264,9 @@
 		41EC3B2622CEC47F007E2886 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				413831D022D0E93400DE4A6F /* Cells */,
 				41EC3B2B22CEC4C3007E2886 /* HomeViewController.swift */,
 				41EC3B2C22CEC4C3007E2886 /* HomeViewController.xib */,
-				41EC3B4122CEE81E007E2886 /* EventListTableViewCell.swift */,
-				41EC3B4222CEE81E007E2886 /* EventListTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,6 +308,7 @@
 		41EC3B4522CEEC94007E2886 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				413831D522D0EFF400DE4A6F /* Kingfisher.framework */,
 				41EC3B4622CEEC94007E2886 /* Alamofire.framework */,
 			);
 			name = Frameworks;
@@ -306,6 +324,7 @@
 				412486F822CEB8A6009426F4 /* Sources */,
 				412486F922CEB8A6009426F4 /* Frameworks */,
 				412486FA22CEB8A6009426F4 /* Resources */,
+				413831D722D0EFFF00DE4A6F /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -430,16 +449,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		413831D722D0EFFF00DE4A6F /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		412486F822CEB8A6009426F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				41EC3B4322CEE81E007E2886 /* EventListTableViewCell.swift in Sources */,
+				413831D422D0ED3E00DE4A6F /* IntExtension.swift in Sources */,
 				41EC3B3322CECF07007E2886 /* RootViewControllerProvider.swift in Sources */,
 				413831C222D04EE000DE4A6F /* TableViewDataSource.swift in Sources */,
 				413831C722D0534A00DE4A6F /* NibInstantiatable.swift in Sources */,
 				4124870222CEB8A6009426F4 /* ViewController.swift in Sources */,
+				413831CF22D0E61B00DE4A6F /* DateFormatter.swift in Sources */,
 				4128A92F22CEBFE300EA82DC /* UIFontExtension.swift in Sources */,
 				413831BE22D03CD900DE4A6F /* Event.swift in Sources */,
 				413831CA22D053A800DE4A6F /* Util.swift in Sources */,

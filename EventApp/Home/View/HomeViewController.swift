@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeViewController: UIViewController {
 
@@ -48,6 +49,14 @@ class HomeViewController: UIViewController {
                 if let eventCell = cell as? EventListTableViewCell {
                     eventCell.eventNameLabel.text = event.title
                     eventCell.eventDescriptionLabel.text = event.description
+                    eventCell.dateLabel.text = event.dateString
+                    guard let imageUrlString = event.image, let url = URL(string: imageUrlString) else { return }
+                    let resource = ImageResource(downloadURL: url, cacheKey: imageUrlString)
+                    eventCell.thumbImageView.kf.indicatorType = .activity
+                    eventCell.thumbImageView?.kf.setImage(with: resource,
+                                                     placeholder: UIImage(named: "placeholder"),
+                                                     options: [.transition(.fade(1)),
+                                                               .cacheOriginalImage])
                 }
             }
             self?.dataSource = dataSource

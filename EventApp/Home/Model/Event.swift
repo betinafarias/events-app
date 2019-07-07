@@ -20,6 +20,14 @@ struct Event: Decodable {
     let people: [Person]
     let cupons: [Coupon]?
     
+    var dateString: String {
+        return date.stringFromUnixTimestamp
+    }
+    
+    var eventTime: String {
+        return date.timeStringFromUnixTimestamp
+    }
+    
 //    enum CodingKeys: String, CodingKey {
 //        case latitude
 //    }
