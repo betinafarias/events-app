@@ -9,5 +9,5 @@
 import Foundation
 
 enum EventDetailModel: Int, CaseIterable {
-    case description, people, price
+    case header, description, people, price
 }

@@ -25,13 +25,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dz-On-qZZ">
-                        <rect key="frame" x="32" y="36" width="42" height="21"/>
+                        <rect key="frame" x="72" y="36" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeV-Hl-fsA">
-                        <rect key="frame" x="246" y="86" width="42" height="21"/>
+                        <rect key="frame" x="206" y="86" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -64,20 +64,19 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="jeV-Hl-fsA" secondAttribute="trailing" constant="32" id="2N2-WL-Xg4"/>
                     <constraint firstItem="0Wb-xS-ktg" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="75f-mY-s7e"/>
                     <constraint firstItem="ojh-xr-OsH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="8BK-0S-F7g"/>
                     <constraint firstItem="e3K-UF-zJo" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="GZg-Ay-rej"/>
                     <constraint firstItem="e3K-UF-zJo" firstAttribute="top" secondItem="XeW-Zr-54F" secondAttribute="bottom" constant="21.5" id="M4B-o2-PM1"/>
-                    <constraint firstAttribute="bottom" secondItem="ojh-xr-OsH" secondAttribute="bottom" constant="190.5" id="RK7-s5-VtA"/>
                     <constraint firstItem="0Wb-xS-ktg" firstAttribute="top" secondItem="ojh-xr-OsH" secondAttribute="bottom" constant="36" id="Tcy-tg-nMX"/>
+                    <constraint firstItem="2Dz-On-qZZ" firstAttribute="leading" secondItem="ojh-xr-OsH" secondAttribute="leading" constant="56" id="ZGO-UG-Qa8"/>
                     <constraint firstItem="jeV-Hl-fsA" firstAttribute="bottom" secondItem="ojh-xr-OsH" secondAttribute="bottom" constant="-16" id="eWm-sN-DEv"/>
                     <constraint firstItem="ojh-xr-OsH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="gUe-kq-EUn"/>
-                    <constraint firstItem="2Dz-On-qZZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="iwQ-1P-zoA"/>
                     <constraint firstAttribute="bottom" secondItem="e3K-UF-zJo" secondAttribute="bottom" constant="28" id="kI2-VZ-87V"/>
                     <constraint firstItem="2Dz-On-qZZ" firstAttribute="top" secondItem="ojh-xr-OsH" secondAttribute="top" constant="16" id="kZt-Jf-fVG"/>
                     <constraint firstAttribute="trailing" secondItem="ojh-xr-OsH" secondAttribute="trailing" constant="16" id="nPd-ej-6ze"/>
                     <constraint firstItem="XeW-Zr-54F" firstAttribute="top" secondItem="0Wb-xS-ktg" secondAttribute="bottom" constant="14" id="o3J-Mu-v5a"/>
+                    <constraint firstItem="jeV-Hl-fsA" firstAttribute="trailing" secondItem="ojh-xr-OsH" secondAttribute="trailing" constant="-56" id="tCj-DX-7bd"/>
                     <constraint firstItem="XeW-Zr-54F" firstAttribute="centerX" secondItem="0Wb-xS-ktg" secondAttribute="centerX" id="xg7-9a-DHt"/>
                 </constraints>
             </tableViewCellContentView>

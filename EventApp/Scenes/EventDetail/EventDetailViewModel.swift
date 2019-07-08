@@ -10,14 +10,19 @@ import Foundation
 
 protocol EventDetailViewModelProtocol: AnyObject {
     var event: Dynamic<Event?> { get }
+    var delegate: EventViewModelDelegate? { get set }
     func loadData()
+    func checkin(name: String, email: String)
+}
+
+protocol EventViewModelDelegate: AnyObject {
+    func showCheckinSucceededAlert()
 }
 
 final class EventDetailViewModel {
     var event: Dynamic<Event?> = Dynamic(nil)
-    var tableCellHeight: Int = 164
-   
     private var eventId: String
+    internal var delegate: EventViewModelDelegate?
     
     init(eventId: String) {
         self.eventId = eventId
@@ -33,6 +38,21 @@ extension EventDetailViewModel: EventDetailViewModelProtocol {
                     self?.event.value = event
                 }
             case .failure(let error):
+                // TODO: treat errors
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func checkin(name: String, email: String) {
+        APIManager.request(with: CheckinEndpoint.checkin(name: name, email: email, eventId: eventId)) { [weak self] (result: Result<Bool, APIError>) in
+            switch result {
+            case .success:
+                DispatchQueue.main.async {
+                    self?.delegate?.showCheckinSucceededAlert()
+                }
+            case .failure(let error):
+                // TODO: treat errors
                 print(error.localizedDescription)
             }
         }

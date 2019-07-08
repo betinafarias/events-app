@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol PriceTableViewCellDelegate: AnyObject {
+    func didTapCheckin()
+}
+
 class PriceTableViewCell: NibRegistrableTableViewCell {
     @IBOutlet weak var discountLabel: UILabel! {
         didSet {
@@ -43,8 +47,12 @@ class PriceTableViewCell: NibRegistrableTableViewCell {
             checkinButton.setTitleColor(.white, for: .normal)
             checkinButton.backgroundColor = .primaryColor
             checkinButton.layer.cornerRadius = 22
+            // TODO: Localize strings
+            checkinButton.setTitle("Check in", for: .normal)
         }
     }
+    
+    weak var delegate: PriceTableViewCellDelegate?
     
     func configure(with event: Event) {
         priceLabel.text = event.price.currencyFormatter
@@ -53,5 +61,6 @@ class PriceTableViewCell: NibRegistrableTableViewCell {
     }
     
     @IBAction func checkinTapped(_ sender: Any) {
+        delegate?.didTapCheckin()
     }
 }

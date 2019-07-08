@@ -17,9 +17,6 @@ public enum GenericError: Error {
 public enum APIError: Error {
     case message(description: String)
     case invalidUrl
-    case undefined
-    case invalidData(error: Error)
-    case dataNotFount
     case jsonParsing
     case requestFailure
 }

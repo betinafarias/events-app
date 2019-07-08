@@ -44,6 +44,10 @@
 		4172E56522D2D58700081C2A /* PriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172E56322D2D58700081C2A /* PriceTableViewCell.swift */; };
 		4172E56622D2D58700081C2A /* PriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4172E56422D2D58700081C2A /* PriceTableViewCell.xib */; };
 		4172E56822D2DABB00081C2A /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172E56722D2DABB00081C2A /* DoubleExtension.swift */; };
+		4172E56B22D2E05200081C2A /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172E56922D2E05200081C2A /* HeaderTableViewCell.swift */; };
+		4172E56C22D2E05200081C2A /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4172E56A22D2E05200081C2A /* HeaderTableViewCell.xib */; };
+		4172E56E22D2E47600081C2A /* CheckinEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172E56D22D2E47600081C2A /* CheckinEndpoint.swift */; };
+		4172E57922D2E9F200081C2A /* EventNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172E57822D2E9F200081C2A /* EventNavigationController.swift */; };
 		41EC3B2D22CEC4C3007E2886 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC3B2B22CEC4C3007E2886 /* HomeViewController.swift */; };
 		41EC3B2E22CEC4C3007E2886 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41EC3B2C22CEC4C3007E2886 /* HomeViewController.xib */; };
 		41EC3B3022CECEB2007E2886 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC3B2F22CECEB2007E2886 /* AppCoordinator.swift */; };
@@ -119,6 +123,10 @@
 		4172E56322D2D58700081C2A /* PriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTableViewCell.swift; sourceTree = "<group>"; };
 		4172E56422D2D58700081C2A /* PriceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceTableViewCell.xib; sourceTree = "<group>"; };
 		4172E56722D2DABB00081C2A /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		4172E56922D2E05200081C2A /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		4172E56A22D2E05200081C2A /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		4172E56D22D2E47600081C2A /* CheckinEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinEndpoint.swift; sourceTree = "<group>"; };
+		4172E57822D2E9F200081C2A /* EventNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNavigationController.swift; sourceTree = "<group>"; };
 		41EC3B2B22CEC4C3007E2886 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		41EC3B2C22CEC4C3007E2886 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		41EC3B2F22CECEB2007E2886 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -245,6 +253,7 @@
 				413831C122D04EE000DE4A6F /* TableViewDataSource.swift */,
 				413831C922D053A800DE4A6F /* Util.swift */,
 				4172E54F22D2B5E300081C2A /* SectionedTableViewDataSource.swift */,
+				4172E57822D2E9F200081C2A /* EventNavigationController.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -289,6 +298,7 @@
 			children = (
 				413831B922D0227D00DE4A6F /* APIManager.swift */,
 				413831BB22D03B2900DE4A6F /* EventsEndpoint.swift */,
+				4172E56D22D2E47600081C2A /* CheckinEndpoint.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -315,6 +325,8 @@
 				4172E55B22D2C0B800081C2A /* PersonCollectionViewCell.xib */,
 				4172E56322D2D58700081C2A /* PriceTableViewCell.swift */,
 				4172E56422D2D58700081C2A /* PriceTableViewCell.xib */,
+				4172E56922D2E05200081C2A /* HeaderTableViewCell.swift */,
+				4172E56A22D2E05200081C2A /* HeaderTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -475,6 +487,7 @@
 				4172E54E22D2B3B600081C2A /* EventDescriptionTableViewCell.xib in Resources */,
 				41EC3B4422CEE81E007E2886 /* EventListTableViewCell.xib in Resources */,
 				4172E54922D29B4900081C2A /* EventDetailViewController.xib in Resources */,
+				4172E56C22D2E05200081C2A /* HeaderTableViewCell.xib in Resources */,
 				4128A92622CEBE3600EA82DC /* RalewayBold.ttf in Resources */,
 				4124870A22CEB8A9009426F4 /* LaunchScreen.storyboard in Resources */,
 				4172E55922D2BFFC00081C2A /* PeopleTableViewCell.xib in Resources */,
@@ -532,7 +545,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4172E56B22D2E05200081C2A /* HeaderTableViewCell.swift in Sources */,
 				41EC3B4322CEE81E007E2886 /* EventListTableViewCell.swift in Sources */,
+				4172E56E22D2E47600081C2A /* CheckinEndpoint.swift in Sources */,
 				4172E54822D29B4900081C2A /* EventDetailViewController.swift in Sources */,
 				413831D422D0ED3E00DE4A6F /* IntExtension.swift in Sources */,
 				4172E55822D2BFFC00081C2A /* PeopleTableViewCell.swift in Sources */,
@@ -549,6 +564,7 @@
 				41EC3B3E22CED7EC007E2886 /* HomeViewModel.swift in Sources */,
 				413831BC22D03B2900DE4A6F /* EventsEndpoint.swift in Sources */,
 				41EC3B3022CECEB2007E2886 /* AppCoordinator.swift in Sources */,
+				4172E57922D2E9F200081C2A /* EventNavigationController.swift in Sources */,
 				413831DB22D2963200DE4A6F /* EventDetailViewModel.swift in Sources */,
 				4124870022CEB8A6009426F4 /* AppDelegate.swift in Sources */,
 				4172E55C22D2C0B800081C2A /* PersonCollectionViewCell.swift in Sources */,

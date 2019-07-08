@@ -16,22 +16,7 @@ class AppCoordinator: Coordinator {
     private let window: UIWindow
     
     private lazy var navigationController: UINavigationController = {
-        let navigationController = UINavigationController()
-        navigationController.navigationBar.prefersLargeTitles = true
-        navigationController.navigationBar.barTintColor = .white
-        navigationController.navigationBar.backgroundColor = .white
-        
-        let attrs = [
-            NSAttributedString.Key.foregroundColor: UIColor.black,
-            NSAttributedString.Key.font: UIFont.font(ofFamily: .ralewaySemibold, withSize: 18)
-        ]
-        UINavigationBar.appearance().titleTextAttributes = attrs
-        
-        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black,
-                                                                 NSAttributedString.Key.font: UIFont.font(ofFamily: .ralewayBold, withSize: 26)]
-        navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController.navigationBar.shadowImage = UIImage()
-        
+        let navigationController = EventNavigationController()
         return navigationController
     }()
     

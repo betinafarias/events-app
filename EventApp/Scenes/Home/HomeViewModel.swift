@@ -42,6 +42,7 @@ extension HomeViewModel: HomeViewModelProtocol {
                     self?.events.value = events
                 }
             case .failure(let error):
+                // TODO: treat errors
                 print(error.localizedDescription)
             }
         }
