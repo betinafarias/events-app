@@ -9,18 +9,18 @@
 import Foundation
 
 protocol HomeNavigationDelegate: AnyObject {
-    func showDetail()
+    func showDetail(with eventId: String)
 }
 
 protocol HomeViewModelProtocol: AnyObject {
     var events: Dynamic<[Event]> { get }
     var tableCellHeight: Int { get }
-    func showDetail()
+    func showDetail(with eventId: String)
     func loadData()
 }
 
 final class HomeViewModel {
-    private weak var navigationDelegate: HomeNavigationDelegate?
+    private var navigationDelegate: HomeNavigationDelegate?
     var events: Dynamic<[Event]> = Dynamic([])
     var tableCellHeight: Int = 164
     
@@ -30,6 +30,10 @@ final class HomeViewModel {
 }
 
 extension HomeViewModel: HomeViewModelProtocol {
+    func showDetail(with eventId: String) {
+        self.navigationDelegate?.showDetail(with: eventId)
+    }
+    
     func loadData() {
         APIManager.request(with: EventsEndpoint.getEvents) { [weak self] (result: Result<[Event], APIError>) in
             switch result {
@@ -41,9 +45,5 @@ extension HomeViewModel: HomeViewModelProtocol {
                 print(error.localizedDescription)
             }
         }
-    }
-    
-    func showDetail() {
-        self.navigationDelegate?.showDetail()
     }
 }

@@ -18,6 +18,10 @@ struct Constants {
             static let xib = "HomeViewController"
             static let title = "Eventos"
         }
+        struct EventDetailViewController {
+            static let xib = "EventDetailViewController"
+            static let title = "Detalhes"
+        }
     }
 }
 

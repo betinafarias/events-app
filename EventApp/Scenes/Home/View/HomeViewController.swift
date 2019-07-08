@@ -18,7 +18,6 @@ class HomeViewController: UIViewController {
             tableView.backgroundColor = .clear
             tableView.tableFooterView = UIView()
             tableView.registerNib(for: EventListTableViewCell.self)
-            tableView.allowsSelection = false
         }
     }
     private let viewModel: HomeViewModelProtocol
@@ -32,7 +31,6 @@ class HomeViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) for \(Constants.Xibs.SplashViewController.xib) has not been implemented")
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,5 +67,10 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(integerLiteral: viewModel.tableCellHeight)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let eventId = viewModel.events.value[indexPath.row].id
+        viewModel.showDetail(with: eventId)
     }
 }

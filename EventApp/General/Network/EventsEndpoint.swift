@@ -12,7 +12,7 @@ enum EventsEndpoint: APIRoute {
     var method: RequestMethod { return .GET }
     
     case getEvents
-    case getEvent(id: Int)
+    case getEvent(id: String)
     
     var path: String {
         switch self {

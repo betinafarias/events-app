@@ -20,4 +20,12 @@ extension UIColor {
     static var tableCellShadow: UIColor {
         return UIColor(red: 226/255, green: 226/255, blue: 226/255, alpha: 0.36)
     }
+    
+    static var primaryColor: UIColor {
+        return UIColor(red: 74/255, green: 219/255, blue: 169/255, alpha: 1)
+    }
+    
+    static var secondaryColor: UIColor {
+        return UIColor(red: 116/255, green: 148/255, blue: 255/255, alpha: 1)
+    }
 }

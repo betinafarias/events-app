@@ -23,6 +23,7 @@ public extension NibRegistrableView {
 }
 
 public typealias NibRegistrableTableViewCell = NibRegistrableView & UITableViewCell
+typealias NibRegistrableCollectionViewCell = NibRegistrableView & UICollectionViewCell
 
 public extension UITableView {
     func registerNib(for cellClass: NibRegistrableTableViewCell.Type) {
@@ -31,5 +32,15 @@ public extension UITableView {
     
     func dequeueReusableCell<T: NibRegistrableTableViewCell>() -> T? {
         return dequeueReusableCell(withIdentifier: T.reuseId) as? T
+    }
+}
+
+extension UICollectionView {
+    func registerNib(for cellClass: NibRegistrableCollectionViewCell.Type) {
+        register(cellClass.nib, forCellWithReuseIdentifier: cellClass.reuseId)
+    }
+    
+    func dequeueReusableCell<T: NibRegistrableCollectionViewCell>(for indexPath: IndexPath) -> T? {
+        return dequeueReusableCell(withReuseIdentifier: T.reuseId, for: indexPath) as? T
     }
 }
