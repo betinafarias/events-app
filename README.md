@@ -40,7 +40,7 @@ Funcionalidades que faltam ser desenvolvidas:
 
 # Autora
 
-* [Betina Farias](https://github.com/betinafarias)
+* [Betina Farias](https://github.com/betinafarias) - Desenvolvimento do aplicativo e elaboração da UI.
 
 # License
 
